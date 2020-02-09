@@ -1,0 +1,37 @@
+package com.company;
+
+public class Circle extends Shape{
+    private double radius = 0;
+    private Point center = new Point();
+    public Circle(){
+
+    }
+    public Circle(double r, Point p){
+        radius = r;
+        center = p;
+    }
+    public double getRadius(){
+        return radius;
+    }//end getRadius()
+    public Point getCenter(){
+        return center;
+    }//end getCenter()
+    public void setRadius(double newRadius){
+        radius = newRadius;//assign new radius
+    }//end setRadius()
+    public void setPoint(Point newPoint){
+        center = newPoint;//assign new point
+    }//end setPoint()
+    public String toStr(){
+        String rv = "Circle with 1 side, radius = "+radius+" and center = ("+center.x+","+center.y+")";
+        return rv;
+    }//end to Str()
+    public double area(){
+        double rv = Math.PI * radius * radius;
+        return rv;
+    }//end area()
+    public double perimeter(){
+        double rv = 2* Math.PI * radius;
+        return rv;
+    }//end perimeter()
+}
