@@ -1,0 +1,37 @@
+package com.company;
+
+public class Rectangle extends Shape {
+    private double length = 0;
+    private double width = 0;
+    public Rectangle(){
+
+    }
+    public Rectangle(double l, double w){
+        length = l;
+        width = w;
+    }
+    public double getLength(){
+        return length;
+    }//end getLength()
+    public double getWidth(){
+        return width;
+    }//end getWidth()
+    public void setLength(double newLength){
+        length = newLength;//assign new length
+    }//end setLength()
+    public void setWidth(double newWidth){
+        width = newWidth;//assign new width
+    }//end setWidth()
+    public String toStr(){
+        String rv = "Rectangle with 4 sides, length = "+length+" and width = "+width;
+        return rv;
+    }//end to Str()
+    public double area(){
+        double rv = length * width;
+        return rv;
+    }//end area()
+    public double perimeter(){
+        double rv = length + length + width + width;
+        return rv;
+    }//end perimeter()
+}
