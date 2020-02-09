@@ -1,0 +1,19 @@
+package com.company;
+
+public class Shape {
+    private final int NUMBER_OF_SIDES = 0;
+
+    public Shape(){
+
+    }
+    public String toStr(){
+        return "";
+    }//end to Str()
+    public double area(){
+        return 0;
+    }//end area()
+    public double perimeter(){
+        return 0;
+    }//end perimeter()
+}
+
