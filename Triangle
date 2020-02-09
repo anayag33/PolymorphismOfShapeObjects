@@ -1,0 +1,61 @@
+package com.company;
+
+public class Triangle extends Shape{
+    private double sideA = 0;
+    private double sideB = 0;
+    private double sideC = 0;
+    private double base = 0;
+    private double height = 0;
+    public Triangle(){
+
+    }
+    public Triangle(double sA, double sB, double sC, double b, double h){
+        sideA = sA;
+        sideB = sB;
+        sideC = sC;
+        base = b;
+        height = h;
+    }
+    public double getSideA(){
+        return sideA;
+    }//end getSideA
+    public double getSideB(){
+        return sideB;
+    }//end getSideB
+    public double getSideC(){
+        return sideC;
+    }//end getSideC
+    public double getBase(){
+        return base;
+    }//end getBase
+    public double getHeight(){
+        return height;
+    }//end getHeight
+    public void setSideA(double newSideA){
+        sideA = newSideA;
+    }//end setSideA
+    public void setSideB(double newSideB){
+        sideA = newSideB;
+    }//end setSideB
+    public void setSideC(double newSideC){
+        sideA = newSideC;
+    }//end setSideC
+    public void setBase(double newBase){
+        sideA = newBase;
+    }//end setBase
+    public void setHeight(double newHeight){
+        sideA = newHeight;
+    }//end setHeight
+    public String toStr(){
+        String rv = "Triangle with 3 sides, side lengths = "+sideA+","+sideB+","+sideC+", base = "+base+", height = "+height;
+        return rv;
+    }//end to Str()
+    public double area(){
+        double rv = (base * height) / 2;
+        return rv;
+    }//end area()
+    public double perimeter(){
+        double rv = sideA + sideB + sideC;
+        return rv;
+    }//end perimeter()
+}
