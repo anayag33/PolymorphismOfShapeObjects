@@ -1,0 +1,13 @@
+package com.company;
+
+public class Point {
+    int x = 0;
+    int y = 0;
+    public Point(){
+
+    }
+    public Point(int xValue, int yValue){
+        x = xValue;
+        y = yValue;
+    }
+}
